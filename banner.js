@@ -1,5 +1,4 @@
 // @author: Chad Elston
-var t1 = new TimelineLite();
 function initializeBanner() { setupBanner(); }
 function setupBanner() {
     CSSPlugin.defaultForce3D = false;
