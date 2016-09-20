@@ -1,0 +1,32 @@
+/* @author: Chad Elston */
+* { padding: 0px; margin: 0px; }
+img { border:0; }
+#banner, #feature { 
+    position: absolute; 
+    cursor: pointer; 
+    overflow: hidden; 
+    top: 0px; 
+    left: 0px;
+}
+#banner { 
+    background-color: #333333;
+}
+#featureFrame {
+    left: 12px;
+    top: 12px;
+    width: 276px; 
+    height: 182px;
+}
+#feature {  
+/* 
+    ** hack to try to reduce jankiness of animation in chrome Mac
+    ** you can try translateZ to force 3D rendering which may help.
+    ** Chromium web team has recommended using the 'will-change' property as a workaround to smooth janky animation.
+    ** I found this works best.
+*/
+/*
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+*/
+    will-change: transform;
+}
